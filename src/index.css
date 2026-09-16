@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --indigo-deep: #152238;
+  --indigo: #213A63;
+  --indigo-soft: #3E5D93;
+  --paper: #F6F1E3;
+  --paper-dark: #EAE1C8;
+  --red-seal: #A63A2B;
+  --red-seal-dark: #8A2E22;
+  --ink: #1B1912;
+  --ink-soft: #514C3E;
+  --white: #FFFFFF;
+  --line: #D8CEB0;
+}
+
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--ink);
+  font-family: 'Zen Kaku Gothic New', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-mincho {
+  font-family: 'Shippori Mincho', serif;
+}
+
+.font-zen {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+#flightpath {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: drawFlight 2.6s ease-out 0.4s forwards;
+}
+
+@keyframes drawFlight {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #flightpath {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+}
+

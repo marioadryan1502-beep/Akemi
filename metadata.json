@@ -1,0 +1,6 @@
+{
+  "name": "Akemi - LPK Bahasa Jepang & Penyaluran Kerja",
+  "description": "Lembaga Pelatihan Kerja Bahasa Jepang dan Penyaluran Kerja Resmi ke Jepang (Magang & Tokutei Ginou / SSW). Beralamat di Jalur Sutera Timur 10A No. 11.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
